@@ -98,10 +98,46 @@
 
 <script>
   var countDownDate = new Date("Apr 7, 2021 00:00:00").getTime();
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  var dayText = 0;
+  var hourText = 0;
+  var minuteText = 0;
+  var secondText = 0;
+
+  function update(){
+    var speed = 10;
+    var speedDays = (days - dayText)/speed;
+    var speedHours = (hours - hourText)/speed;
+    var speedMinutes = (minutes - minuteText)/speed;
+    var speedSeconds = (seconds - secondText)/speed;
+
+    dayText+=speedDays;
+    hourText+=speedHours;
+    minuteText+=speedMinutes;
+    secondText+=speedSeconds;
+    if(dayText < days - 2){
+      
+      setTimeout(update, speed)
+    document.getElementById("dd").innerHTML = Math.floor(dayText);
+      document.getElementById("hh").innerHTML = Math.floor(hourText);
+      document.getElementById("mm").innerHTML =Math.floor(minuteText);
+      document.getElementById("ss").innerHTML = Math.floor(secondText);
+    }
+  }
+  update();
+
+  var countDownDate = new Date("Apr 7, 2021 00:00:00").getTime();
 
   function entered(){
     console.log(document.getElementById("nameText").value)
   }
+
   var timer = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
