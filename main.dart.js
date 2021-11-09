@@ -54834,7 +54834,7 @@ J(a,b){var s=null,r=U.j1()===C.N||U.j1()===C.P
 $.q5.b=r
 P.mt($.q5.ap())
 r=P.b4(10,25,47,1)
-return new S.t8(new F.tl(s),"AGB",X.acz(C.Dm.i(0,600),C.ar,"Georgia",r,new R.cN(A.co(s,s,s,s,s,s,s,s,s,s,s,72,s,C.a9,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,s,A.co(s,s,s,s,s,s,s,s,s,s,s,36,C.aj,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,A.co(s,s,s,s,s,s,s,s,"Hind",s,s,14,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)),!1,s)}}
+return new S.t8(new F.tl(s),"Arnold | Portfolio",X.acz(C.Dm.i(0,600),C.ar,"Georgia",r,new R.cN(A.co(s,s,s,s,s,s,s,s,s,s,s,72,s,C.a9,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,s,A.co(s,s,s,s,s,s,s,s,s,s,s,36,C.aj,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,A.co(s,s,s,s,s,s,s,s,"Hind",s,s,14,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s,s)),!1,s)}}
 F.tl.prototype={
 aq(){return new F.Ib(C.m)}}
 F.Ib.prototype={
